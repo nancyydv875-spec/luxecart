@@ -1,0 +1,326 @@
+/* =========================
+   LUXECART RESPONSIVE CSS
+========================= */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .main-nav {
+        gap: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content {
+        max-width: 500px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .cart-layout,
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+
+    /* Header */
+
+    .nav-container {
+        padding: 14px 0;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+
+    .nav-actions {
+        position: absolute;
+        right: 5%;
+        top: 17px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+
+    /* Categories */
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+
+    /* Products */
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .product-info {
+        padding: 14px;
+    }
+
+    .product-name {
+        font-size: 15px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .add-cart-btn,
+    .view-product-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* Product Details */
+
+    .product-details-section {
+        padding: 45px 0;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .details-image {
+        height: 350px;
+    }
+
+    .details-content h1 {
+        font-size: 30px;
+    }
+
+
+    /* About */
+
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Contact */
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-form-box {
+        padding: 20px;
+    }
+
+
+    /* Cart */
+
+    .cart-section {
+        padding: 50px 0;
+    }
+
+    .cart-item {
+        grid-template-columns: 70px 1fr;
+        gap: 12px;
+    }
+
+    .cart-item > img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cart-item-right {
+        grid-column: 2;
+    }
+
+
+    /* Checkout */
+
+    .checkout-section {
+        padding: 50px 0;
+    }
+
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-form,
+    .checkout-summary {
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Page Banner */
+
+    .page-banner {
+        padding: 45px 0;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+    }
+
+
+    /* Footer */
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ---------- VERY SMALL SCREEN ---------- */
+
+@media (max-width: 400px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .main-nav {
+        gap: 8px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .nav-actions {
+        position: static;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
